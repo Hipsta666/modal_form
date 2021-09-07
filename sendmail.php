@@ -13,7 +13,7 @@ $mail->IsHTML(true);
 
 $mail->setFrom('andrewhipsta@gmail.com', 'UserName');
 $mail->addAddress('andrewhipsta@gmail.com');
-$mail->Subject('Test');
+$mail->Subject = 'Test';
 
 $body = '<h1>ТЕСТ</h1>';
 
