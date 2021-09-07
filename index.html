@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="section">
+      <a href="#modal" class="modal-open link"><span>click me</span></a>
+    </section>
+
+    <div id="modal" class="modal">
+      <div class="modal__inner">
+        <div class="modal-close"></div>
+        <div class="modal__inner-body">
+          <div class="modal__inner-body-content">
+            <form class="form" id="form" action="#">
+              <div class="form__title">Title form</div>
+
+              <div class="form__item form__item--floating">
+                <input
+                  class="form__item__input _req"
+                  id="formFName"
+                  type="text"
+                  name="firstName"
+                  placeholder="First Name *"
+                />
+                <span class="form__item__message form__item__message--firstName"
+                  >Please fill in first name</span
+                >
+                <label class="form__item__label" for="formFName"
+                  >First Name *</label
+                >
+              </div>
+
+              <div class="form__item form__item--floating">
+                <input
+                  class="form__item__input _req"
+                  id="formLName"
+                  type="text"
+                  name="lastName"
+                  placeholder="Last Name *"
+                />
+                <span class="form__item__message form__item__message--lastName"
+                  >Please fill in last name</span
+                >
+                <label class="form__item__label" for="formLName"
+                  >Last Name *</label
+                >
+              </div>
+
+              <div class="form__item form__item--floating">
+                <input
+                  class="form__item__input _req _email"
+                  id="formEmail"
+                  type="text"
+                  name="email"
+                  placeholder="user@gmail.com *"
+                />
+                <span
+                  class="form__item__message form__item__message--email"
+                ></span>
+                <label class="form__item__label" for="formEmail"
+                  >user@gmail.com *</label
+                >
+              </div>
+
+              <div class="form__item form__item--flex">
+                <div class="form__item__title">Product type *</div>
+                <div class="form__item__select">
+                  <div class="custom-select _req">
+                    <select>
+                      <option value="0">Select product type</option>
+                      <option value="50">Product $50</option>
+                      <option value="100">Product $100</option>
+                      <option value="300">Product $300</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form__item form__item--flex">
+                <div class="form__item__title">Additional feature for $100</div>
+                <label class="switch">
+                  <input
+                    class="switch__input checkboxPrice"
+                    id="checkbox1"
+                    type="checkbox"
+                    name="checkbox1"
+                    value="100"
+                  />
+                  <span class="switch__slider switch__slider--round"></span>
+                </label>
+              </div>
+
+              <div class="form__item form__item--flex">
+                <div class="form__item__title">Additional feature for $200</div>
+                <label class="switch">
+                  <input
+                    class="switch__input checkboxPrice"
+                    id="checkbox2"
+                    type="checkbox"
+                    name="checkbox2"
+                    value="200"
+                  />
+                  <span class="switch__slider switch__slider--round"></span>
+                </label>
+              </div>
+
+              <div class="form__item form__item--floating">
+                <textarea
+                  class="form__item__input form__item__textarea"
+                  id="formMessage"
+                  name="message"
+                  placeholder="Type your comment"
+                ></textarea>
+                <label class="form__item__label" for="formMessage"
+                  >Type your comment</label
+                >
+              </div>
+
+              <div class="form__item form__item--flex">
+                <div class="form__item__title">Total price</div>
+                <div class="form__item__price"><span id="price">$0</span></div>
+              </div>
+
+              <div class="form__item form__item--flex form__item--center">
+                <button class="form__button" type="submit">Send form</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
